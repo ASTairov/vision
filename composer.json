@@ -1,8 +1,12 @@
 {
   "name": "as-tairov/seat-vision",
-  "description": "Wormhole tools for SeAT",
   "type": "seat-plugin",
   "license": "MIT",
+  "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.5.*",
+        "eveseat/web": "~3.0.15"
+    },
   "authors": [
     {
       "name": "ASTairov",
@@ -10,9 +14,10 @@
     }
   ],
   "minimum-stability": "alpha",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "ASTairov\\Seat\\Vision\\": "src/"
     }
-  },
+  }
 }
