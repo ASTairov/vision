@@ -15,18 +15,4 @@
       "ASTairov\\Seat\\Vision\\": "src/"
     }
   },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "ASTairov\\Seat\\Vision\\VisionServiceProvider"
-      ]
-    }
-  },
-  "require": {
-    "php": ">=7.1",
-    "laravel/framework": "5.5.*",
-    "eveseat/services": "^3.0",
-    "eveseat/eveapi": "^3.0",
-    "eveseat/web": "^3.0"
-  }
 }
