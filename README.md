@@ -1,2 +1,2 @@
 # vision
-vision wh pack
+vision pack
