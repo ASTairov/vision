@@ -13,8 +13,6 @@
       "email": "cyb3rgc@gmail.com"
     }
   ],
-  "minimum-stability": "alpha",
-  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "ASTairov\\Seat\\Vision\\": "src/"
