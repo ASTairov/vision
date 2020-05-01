@@ -8,7 +8,7 @@ return [
         'icon' => 'fa-rocket',
         'entries'       => [
             'vision' => [
-                'name' => 'Vision',
+                'name' => 'vision',
                 'icon' => 'fa-rocket',
                 'route_segment' => 'vision',
                 'route' => 'vision.view',
