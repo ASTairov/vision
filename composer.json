@@ -1,23 +1,29 @@
 {
-  "name": "as-tairov/seat-vision",
-  "type": "seat-plugin",
-  "license": "MIT",
-  "require": {
-        "php": ">=7.1",
-        "laravel/framework": "5.5.*",
-        "eveseat/web": "3.0.*"
+    "name": "astairov/seat-vision",
+    "type": "seat-plugin",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "ASTairov",
+            "email": "cyb3rgc@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "ASTairov\\Seat\\Vision\\": "src/"
+        }
     },
-  "authors": [
-    {
-      "name": "ASTairov",
-      "email": "cyb3rgc@gmail.com"
+     "extra": {
+        "laravel": {
+            "providers": [
+                "ASTairov\\Seat\\Vision\\VisionServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "eveseat/services": "^3.0",
+        "eveseat/eveapi": "^3.0",
+        "eveseat/web": "^3.0"
     }
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "autoload": {
-    "psr-4": {
-      "ASTairov\\Seat\\Vision\\": "src/"
-    }
-  }
 }
