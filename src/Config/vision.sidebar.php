@@ -1,18 +1,18 @@
 <?php
 
 return [
-    'doctrine' => [
+    'vision' => [
         'name' => 'DevOps',
-        'permission' => 'fitting.doctrineview',
-        'route_segment' => 'fitting',
+        'permission' => 'vision.view',
+        'route_segment' => 'vision',
         'icon' => 'fa-rocket',
         'entries'       => [
-            'fitting' => [
-                'name' => 'Fittings',
+            'vision' => [
+                'name' => 'Vision',
                 'icon' => 'fa-rocket',
-                'route_segment' => 'fitting',
-                'route' => 'fitting.view',
-                'permission' => 'fitting.view'
+                'route_segment' => 'vision',
+                'route' => 'vision.view',
+                'permission' => 'vision.view'
             ],
         ]
     ]

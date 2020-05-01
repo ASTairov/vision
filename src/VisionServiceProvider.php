@@ -13,12 +13,8 @@ class VisionServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //$this->addCommands();
         $this->add_routes();
-        // $this->add_middleware($router);
         $this->add_views();
-        //$this->add_publications();
-        //$this->add_translations();
     }
 
     /**
@@ -31,19 +27,10 @@ class VisionServiceProvider extends ServiceProvider
         }
     }
 
-    //public function add_translations()
-    //{
-    //    $this->loadTranslationsFrom(__DIR__ . '/lang', 'fitting');
-    //}
-
-    /**
-     * Set the path and namespace for the views.
-     */
     public function add_views()
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'vision');
     }
-
     /**
      * Register the application services.
      *
@@ -59,9 +46,5 @@ class VisionServiceProvider extends ServiceProvider
 
         $this->mergeConfigFrom(
             __DIR__ . '/Config/vision.permissions.php', 'web.permissions');
-    }
-
-    private function addCommands()
-    {
     }
 }
