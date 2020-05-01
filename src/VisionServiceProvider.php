@@ -17,7 +17,7 @@ class VisionServiceProvider extends ServiceProvider
         $this->add_routes();
         // $this->add_middleware($router);
         $this->add_views();
-        $this->add_publications();
+        //$this->add_publications();
         //$this->add_translations();
     }
 
