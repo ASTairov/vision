@@ -13,6 +13,7 @@
       "email": "cyb3rgc@gmail.com"
     }
   ],
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "ASTairov\\Seat\\Vision\\": "src/"
