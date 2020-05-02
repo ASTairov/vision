@@ -16,7 +16,7 @@ class VisionController extends Controller
 {
     public function getVisionView()
     {
-        $visiongroups= Location::handle('95021222')
+        $visiongroups= Location::handle('95021222');
         return view('vision::vision',compact('visiongroups'));
     }
 }
