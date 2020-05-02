@@ -2,18 +2,10 @@
 
 return [
     'vision' => [
-        'name' => 'DevOps',
-        'permission' => 'vision.view',
+        'permission'    => 'Superuser',
+        'name'          => 'Spy',
+        'icon'          => 'fa-exchange',
         'route_segment' => 'vision',
-        'icon' => 'fa-rocket',
-        'entries'       => [
-            'vision' => [
-                'name' => 'vision',
-                'icon' => 'fa-rocket',
-                'route_segment' => 'vision',
-                'route' => 'vision.view',
-                'permission' => 'vision.view'
-            ],
-        ]
-    ]
+        'route'         => 'vision.view',
+    ],
 ];

@@ -47,4 +47,7 @@ class VisionServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/Config/vision.permissions.php', 'web.permissions');
     }
+    private function addCommands()
+    {
+    }
 }

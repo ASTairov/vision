@@ -1,7 +1,7 @@
 <?php
 Route::group([
     'namespace' => 'ASTairov\Seat\Vision\Http\Controllers',
-    'middleware' => ['web','auth'],
+    'middleware' => 'bouncer:superuser',
     'prefix' => 'vision'
 ], function () {
     Route::get('/vision', function () {

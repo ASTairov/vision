@@ -4,11 +4,11 @@
 @section('page_header', "Vision")
 
 @section('left')
-    123
+    left
 @endsection
 @section('center')
-    123
+    center
 @endsection
 @section('right')
-    123
+    right
 @endsection
