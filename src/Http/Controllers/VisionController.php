@@ -16,6 +16,6 @@ class VisionController extends Controller
 {
     public function getVisionView()
     {
-        return echo "Worker";
+        echo "test is begin";
     }
 }
