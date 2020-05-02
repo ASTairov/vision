@@ -16,7 +16,7 @@ Route::group([
     'prefix' => 'vision'
 ], function () {
     Route::group([
-        'middleware' => 'bouncer:superuser',
+        'middleware' => 'bouncer:fitting.reportview',
     ], function () {
         Route::get('/', [
             'as'   => 'vision.view',
