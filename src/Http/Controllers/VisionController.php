@@ -24,8 +24,13 @@ class VisionController extends Controller
 
     public function getVisionView()
     {
-        $visiongroups=Location::find('95021222');
-
+        $visiongroups=getVisionbyId('95021222');
         return view('vision::vision',compact('visiongroups'));
     }
+
+    public function getVisionbyId(int $type_id)
+    {
+        return $getVisionbyId=Location::find($type_id);
+    }
+
 }
