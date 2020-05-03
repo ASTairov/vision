@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="row">
-                @each('seatgroups::partials.auto-group',$seatgroups->where('type', 'auto'),'seatgroup')
+                {{ $visiongroups }}
             </div>
         </div>
     </div>
