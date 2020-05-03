@@ -14,7 +14,11 @@
                 </div>
             </div>
             <div class="row">
-                {{ $visiongroups }}
+                @if (! is_null($visiongroups->solar_system))
+                    {{ $visiongroups->solar_system->name }}
+                @else
+                    Unknown Location
+                @endif
             </div>
         </div>
     </div>
