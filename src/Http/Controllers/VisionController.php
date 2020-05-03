@@ -22,9 +22,9 @@ class VisionController extends Controller
     * @param int $type_id
     */
 
-    public function getVisionView(int $type_id)
+    public function getVisionView()
     {
-        $visiongroups=Location::find($type_id);
+        $visiongroups=Location::find('95021222');
 
         return view('vision::vision',compact('visiongroups'));
     }
