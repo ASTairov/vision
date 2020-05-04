@@ -1,4 +1,4 @@
-@section('title', 'TITLE')
+@section('title', 'Spy')
 @section('page_header', 'PAGE HEADER')
 @section('page_description', "DESC")
 
@@ -14,10 +14,10 @@
                 </div>
             </div>
             <div class="row">
-                @foreach($data as $el)
+                @foreach($users as $el)
                     <div class="alert alert-info">
                         <h3>
-                            {{ $el->name}}
+                            {{ $el->name }}
                         </h3>
                     </div>
                 @endforeach
