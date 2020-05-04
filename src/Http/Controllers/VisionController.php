@@ -15,6 +15,10 @@ use Seat\Eveapi\Models\Location\CharacterLocation;
 use Seat\Eveapi\Models\Killmails;
 use Seat\Eveapi\Jobs\Location\Character;
 
+use Illuminate\Database\Eloquent\Model;
+
+use Seat\Web\Models;
+use Seat\Web\Models\User;
 
 class VisionController extends Controller
 {
@@ -27,6 +31,12 @@ class VisionController extends Controller
         //$visiongroups=$this->getVisionbyId('95021222');
         $visiongroups='test';
         return view('vision::vision',compact('visiongroups'));
+    }
+
+    public function user1()
+    {
+        return view('vesion', ['users' => User::all()]);
+
     }
 
     public function getVisionbyId(int $type_id)

@@ -15,6 +15,13 @@
             </div>
             <div class="row">
                 {{ $visiongroups }}
+                @foreach($data as $el)
+                    <div class="alert alert-info">
+                        <h3>
+                            {{ $el->name}}
+                        </h3>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
