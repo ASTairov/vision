@@ -14,7 +14,6 @@
                 </div>
             </div>
             <div class="row">
-                {{ $visiongroups }}
                 @foreach($data as $el)
                     <div class="alert alert-info">
                         <h3>
