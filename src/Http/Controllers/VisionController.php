@@ -31,7 +31,7 @@ class VisionController extends Controller
         //$visiongroups=$this->getVisionbyId('95021222');
         //$visiongroups='test';
         //return view('vision::vision',compact('visiongroups'));
-        return view('vision::vision', ['users' => User::all()]);
+        return view('vision', ['users'=>User::all()]);
     }
 
     public function getVisionbyId(int $type_id)
