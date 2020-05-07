@@ -14,16 +14,14 @@
                 </div>
             </div>
             <div class="row">
-                @foreach($characters as $el)
                     <div class="alert alert-info">
                         <h3>
-                            {{ $el->name }}
+                             {{ $char_name }}
                         </h3>
                         <p>
-                            {{ $el->location }}
+                            {{ $char_loc }}
                         </p>
                     </div>
-                @endforeach
             </div>
         </div>
     </div>
