@@ -6,8 +6,10 @@
 
 @section('content')
 
-{{ $char_name }}
-<b><span class="id-to-name" data-id="{{ $char_loc->solar_system_id }}"</span></b>
+@foreach($data as $key => $val)
+    {{ $key }} [ <b><span class="id-to-name" data-id="{{ $val }}"</span></b> ]
+@endforeach
+
 
 @endsection
 @push('javascript')

@@ -24,30 +24,28 @@ class VisionController extends Controller
 {
     public function getVisionView()
     {
-        $character_id='95021222';
-        $char_loc = CharacterInfo::with('location')->find($character_id)->location;
-        $char_name = CharacterInfo::with('location')->find($character_id)->name;
-        //$titles = CharacterInfo::with('titles')->find($character_id)->titles;
-        return view('vision::vision', compact('char_loc', 'char_name'));
-        //users
-        //$visiongroups=$this->getVisionbyId('95021222');
-        //$visiongroups='test';
-        //return view('vision::vision',compact('visiongroups'));
-        //$users_l=User::all();
-        //if(count($users_l) > 0 )
-        //{
-        //    return view('vision::vision', compact('vision_users', 'users_l'));
-        //}
-        //else
-        //{
-        //    return view('vision', ['users'=>User::all()]);
-        //}
-
+        $ids=[
+        '2114128820',
+        '2114796962',
+        '2114139809',
+        '2114224584',
+        '2115384420',
+        '2115384467',
+        '2115396144',
+        '2115327813',
+        '2116768440'
+    ];
+        foreach ($ids as $id){
+            $data[getCharName($id)]=[getCharLoc($id)];
+        }
+        //$char_loc = CharacterInfo::with('location')->find($character_id)->location;
+        //$char_name = CharacterInfo::with('location')->find($character_id)->name;
+        return view('vision::vision', compact('data'));
     }
-
-    public function getVisionbyId(int $type_id)
-    {
-        return $getVisionbyId=Location::find($type_id);
+    public function getCharName(int $id){
+        return $char_name = CharacterInfo::with('location')->find($id)->name;
     }
-
+    public function getCharLoc(int $id){
+        return $char_name = CharacterInfo::with('location')->find($id)->name;
+    }
 }
