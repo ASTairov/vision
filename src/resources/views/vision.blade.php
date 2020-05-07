@@ -7,7 +7,7 @@
 @section('content')
 
 @foreach($data as $key => $val)
-    [ {!! $key !!} ] => [ <b><span class="id-to-name" data-id="{!! $val !!}"</span></b> ]
+    [ {!! $key !!} ] => [ <b><span class="id-to-name" data-id="{!! $val->solar_system_id !!}"</span></b> ]
 @endforeach
 
 
