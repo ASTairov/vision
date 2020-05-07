@@ -7,8 +7,7 @@
 @section('content')
 
 {{ $char_name }}
-
-{{ $char_loc->solar_system_id }}
+<b><span class="id-to-name" data-id="{{ $char_loc->solar_system_id }}"</span></b>
 
 @endsection
 @push('javascript')
