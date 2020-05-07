@@ -22,24 +22,23 @@ use Seat\Web\Models\User;
 
 class VisionController extends Controller
 {
-    /**
-    * @param int $type_id
-    */
-
     public function getVisionView()
     {
+        $characters = CharacterInfo::with('location');
+        return view('vision::vision', compact('vision_users', 'characters'));
         //users
         //$visiongroups=$this->getVisionbyId('95021222');
         //$visiongroups='test';
         //return view('vision::vision',compact('visiongroups'));
-        $users_l=User::all();
-        if(count($users_l))
-        {
-            return view('vision::vision', compact('vision_users', 'users_l'));
-        }
-        else {
-            return view('vision', ['users'=>User::all()]);
-        }
+        //$users_l=User::all();
+        //if(count($users_l) > 0 )
+        //{
+        //    return view('vision::vision', compact('vision_users', 'users_l'));
+        //}
+        //else
+        //{
+        //    return view('vision', ['users'=>User::all()]);
+        //}
 
     }
 

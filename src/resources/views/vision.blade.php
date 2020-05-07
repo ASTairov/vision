@@ -19,6 +19,9 @@
                         <h3>
                             {{ $el->name }}
                         </h3>
+                        <p>
+                            {{ $el->location }}
+                        </p>
                     </div>
                 @endforeach
             </div>
