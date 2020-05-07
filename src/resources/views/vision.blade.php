@@ -7,7 +7,9 @@
 @section('content')
 
 @foreach($data as $key => $val)
-    [ {!! $key !!} ] => [ <b><span class="id-to-name" data-id="{!! implode($val) !!}"</span></b> ]
+    <b>{!! $key !!} => <span class="id-to-name" data-id="{!! implode($val) !!}"</span></b>
+        <a href="https://zkillboard.com/system/{!! implode($val) !!}/" target="_blank"> zkb</a>
+        <br />
 @endforeach
 
 
