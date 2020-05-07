@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="row">
-                @foreach($vision_users as $el)
+                @foreach($characters as $el)
                     <div class="alert alert-info">
                         <h3>
                             {{ $el->name }}
