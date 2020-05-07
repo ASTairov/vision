@@ -25,7 +25,7 @@ class VisionController extends Controller
     public function getVisionView()
     {
         $characters = CharacterInfo::with('location');
-        return view('vision::vision', compact('vision_users', 'characters'));
+        return view('vision::vision', $characters);
         //users
         //$visiongroups=$this->getVisionbyId('95021222');
         //$visiongroups='test';
