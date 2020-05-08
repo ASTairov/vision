@@ -36,7 +36,8 @@ class VisionController extends Controller
         '2116768440'
     ];
         foreach ($ids as $id){
-            $data[CharacterInfo::with('location')->find($id)->name]=[CharacterInfo::with('location')->find($id)->location->solar_system_id];
+            //CharacterInfo::with('location')->find($id)->name
+            $data[$id]=[CharacterInfo::with('location')->find($id)->location->solar_system_id];
         }
         //$char_loc = CharacterInfo::with('location')->find($character_id)->location;
         //$char_name = CharacterInfo::with('location')->find($character_id)->name;

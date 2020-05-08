@@ -29,18 +29,19 @@
              <tbody>
                  @foreach($data as $key => $val)
                  <tr id="fitid" data-id="FITID">
-                     <td><img src='https://image.eveonline.com/Character/{!! implode($val) !!}_32.jpg' height='24' /></td>
-                     <td>{!! $key !!}</td>
+                     //image.eveonline.com/Character/94395540_32.jpg
+                     <td><img src='https://image.eveonline.com/Character/{!! $key !!}_32.jpg' height='24' /></td>
+                     <td><span class="id-to-name" data-id="{!! $key !!}"</span></td>
                      <td><span class="id-to-name" data-id="{!! implode($val) !!}"</span></td>
                      <td class="no-hover pull-right">
-                         <button type="button" id="viewfit" class="btn btn-xs btn-success" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="View Fitting">
+                         <button type="button" id="viewfit" class="btn btn-xs btn-success" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="Подробнее о системе">
                              <span class="fa fa-eye text-white"></span>
                          </button>
                          @if (auth()->user()->has('fitting.create', false))
-                         <button type="button" id="editfit" class="btn btn-xs btn-warning" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="Edit Fitting">
+                         <button type="button" id="editfit" class="btn btn-xs btn-warning" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="Редактирование">
                              <span class="fa fa-pencil text-white"></span>
                          </button>
-                         <button type="button" id="deletefit" class="btn btn-xs btn-danger" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="Delete Fitting">
+                         <button type="button" id="deletefit" class="btn btn-xs btn-danger" data-id="{!! implode($val) !!}" data-toggle="tooltip" data-placement="top" title="Удалить персонажа из списка">
                              <span class="fa fa-trash text-white"></span>
                          </button>
                          @endif
