@@ -1,8 +1,8 @@
 @extends('web::layouts.grids.4-4-4')
 
 @section('title', 'Spy')
-@section('page_header', 'PAGE HEADER')
-@section('page_description', "DESC")
+@section('page_header', 'Шпионский уголок')
+@section('page_description', "")
 
 @section('left')
     <div class="box box-primary box-solid">
@@ -29,7 +29,6 @@
              <tbody>
                  @foreach($data as $key => $val)
                  <tr id="fitid" data-id="FITID">
-                     //image.eveonline.com/Character/94395540_32.jpg
                      <td><img src='https://image.eveonline.com/Character/{!! $key !!}_32.jpg' height='24' /></td>
                      <td><span class="id-to-name" data-id="{!! $key !!}"</span></td>
                      <td><span class="id-to-name" data-id="{!! implode($val) !!}"</span></td>
