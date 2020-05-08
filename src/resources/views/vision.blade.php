@@ -1,8 +1,8 @@
+@extends('web::layouts.grids.4-4-4')
+
 @section('title', 'Spy')
 @section('page_header', 'PAGE HEADER')
 @section('page_description', "DESC")
-
-@extends('web::layouts.grids.12')
 
 @section('left')
     <div class="box box-primary box-solid">
@@ -27,7 +27,7 @@
              </tr>
              </thead>
              <tbody>
-@foreach($data as $key => $val)
+                 @foreach($data as $key => $val)
                  <tr id="fitid" data-id="FITID">
                      <td><img src='https://image.eveonline.com/Character/{!! implode($val) !!}_32.jpg' height='24' /></td>
                      <td>{!! $key !!}</td>
@@ -46,7 +46,7 @@
                          @endif
                      </td>
                  </tr>
-@endforeach
+                 @endforeach
             </tbody>
         </table>
         </div>
